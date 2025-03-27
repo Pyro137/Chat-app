@@ -1,2 +1,0 @@
-        console.log("Error in ")
-        res.status(500).json({error:"Internal server Error"})

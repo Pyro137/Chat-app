@@ -5,7 +5,7 @@ import {getMessages, getUsersForSideBar, sendMessage} from "../controllers/messa
 const router =express.Router()
 
 
-router.get("/user",protectRoute,getUsersForSideBar)
+router.get("/users",protectRoute,getUsersForSideBar)
 router.get("/:id",protectRoute,getMessages)
 
 router.post("/send/:id",protectRoute,sendMessage)
